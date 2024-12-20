@@ -6,10 +6,14 @@ export default {
   ],
   theme: {
     fontFamily: {
-      sans: ['Rubik Doodle Shadow', 'sans-serif'],
+      sans: ['Revalia', 'sans-serif'],
       serif: ['Teko', 'serif'],
     },
-    extend: {},
+    extend: {
+      colors : {
+        'cont-color' : '#18171C',
+      }
+    },
   },
   plugins: [],
   exports : {
