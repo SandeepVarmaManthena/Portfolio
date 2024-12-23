@@ -8,6 +8,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import { motion } from 'framer-motion';
 
 const Layout = () => {
 
@@ -21,10 +22,10 @@ const Layout = () => {
 
   return (
     <>
-        <div className="whole_wrapper p-3 bg-[#F8FAFC] w-[100%] h-[79vh]">
-            <div className="top_div w-[100%] sticky top-1 z-50 ">
+        <div className="whole_wrapper px-2 py-1 bg-[#F8FAFC] w-[100%] flex flex-col justify-center items-center h-[100vh] overflow-hidden">
+            <div className="top_div w-[100%] sticky top-2 z-50 ">
                 <div className="top_sub_div_1 flex flex-row justify-between items-center bg-black px-6 py-4 rounded-md drop-shadow-lg">
-                    <p className='text-xl text-white light:text-black font-sans '><span className='text-[red] font-semibold'>Hello,</span> Welcome To My Portfolio.</p>
+                    <p className='text-xl text-white light:text-black font-sans '><span className='text-[#0AFE92] font-semibold'>Hello,</span> Welcome To My Portfolio.</p>
                     <div className="socilal_links flex flex-row justify-between items-center w-[14%]">
                         <a href="https://www.linkedin.com/in/sandeepvarmamantena/">
                             <SlSocialLinkedin className='text-white text-2xl font-bold'/>
@@ -40,16 +41,45 @@ const Layout = () => {
                 </div>
                 <div className="top_sub_div_2">
                     <div className="menu_wrapper bg-[#F8FAFC] flex flex-row justify-between items-center px-0 pt-3 transition-all">
-                        <a  className={`${renderItem === 'home' ? 'w-[100%] text-center cursor-pointer font-sans' : 'cursor-pointer '}`} onClick={() => handleMenuClick('home')}><p className={`${renderItem === 'home' ? 'text-white bg-[#18171C] px-6 py-3 rounded-tr-md rounded-tl-md font-bold font-sans' : 'font-serif'} menu_item text-black text-xl px-6 py-3 font-bold `}>Home</p></a>
-                        <a  className={`${renderItem === 'about' ? 'w-[100%] text-center cursor-pointer font-sans' : 'cursor-pointer '}`} onClick={() => handleMenuClick('about')}><p className={`${renderItem === 'about' ? 'text-white bg-[#18171C] px-6 py-3 rounded-tr-md rounded-tl-md font-bold font-sans' : 'font-serif'} menu_item text-black text-xl px-6 py-3 font-bold `}>About</p></a>
-                        <a  className={`${renderItem === 'projects' ? 'w-[100%] text-center cursor-pointer font-sans' : 'cursor-pointer '}`} onClick={() => handleMenuClick('projects')}><p className={`${renderItem === 'projects' ? 'text-white bg-[#18171C] px-6 py-3 rounded-tr-md rounded-tl-md font-bold font-sans' : 'font-serif'} menu_item text-black text-xl px-6 py-3 font-bold `}>Projects</p></a>
-                        <a  className={`${renderItem === 'contact' ? 'w-[100%] text-center cursor-pointer font-sans' : 'cursor-pointer '}`} onClick={() => handleMenuClick('contact')}><p className={`${renderItem === 'contact' ? 'text-white bg-[#18171C] px-6 py-3 rounded-tr-md rounded-tl-md font-bold font-sans' : 'font-serif'} menu_item text-black text-xl px-6 py-3 font-bold `}>Contact</p></a>
-                        <a href='http://localhost:5173/src/assets/SandeepVarma_Resume.pdf' className='relative cursor-pointer' download={'sandeep_resume.pdf'} type='application/pdf'><p className='menu_item text-[blue] text-xl px-6 py-3 font-bold font-serif'>Resume  <span class="absolute inline-flex top-1 rounded-full h-6 w-6 shadow-3xl animate-bounce text-[blue]"><MdOutlineDownloadForOffline /></span>
+                        <motion.a  
+                            className={`${renderItem === 'home' ? 'w-[50%] text-center cursor-pointer font-sans active delay-300' : 'cursor-pointer '}`} 
+                            onClick={() => handleMenuClick('home')}
+                            transition={{duration: 0.5, delay: 0.3}}>
+                            <p className={`${renderItem === 'home' ? 'text-white bg-black px-6 py-3 rounded-tr-md rounded-tl-md font-sans' : 'font-serif'} menu_item text-black text-2xl px-6 py-3 font-semibold `}>HOME</p>
+                        </motion.a>
+                        <motion.a  
+                            variants={{hidden: {opacity: 0, x: -50}, visible: {opacity: 1, x: 0}}}
+                            initial='hidden'
+                            animate='visible'
+                            className={`${renderItem === 'about' ? 'w-[50%] text-center cursor-pointer font-sans active delay-300' : 'cursor-pointer '}`} 
+                            onClick={() => handleMenuClick('about')}
+                            transition={{duration: 0.5, delay: 0.3}}>
+                            <p className={`${renderItem === 'about' ? 'text-white bg-black px-6 py-3 rounded-tr-md rounded-tl-md font-sans' : 'font-serif'} menu_item text-black text-2xl px-6 py-3 font-semibold `}>ABOUT</p>
+                        </motion.a>
+                        <motion.a  
+                            variants={{hidden: {opacity: 0, x: -50}, visible: {opacity: 1, x: 0}}}
+                            initial='hidden'
+                            animate='visible'
+                            className={`${renderItem === 'projects' ? 'w-[50%] text-center cursor-pointer font-sans active delay-300' : 'cursor-pointer '}`} 
+                            onClick={() => handleMenuClick('projects')}
+                            transition={{duration: 0.5, delay: 0.3}}>
+                            <p className={`${renderItem === 'projects' ? 'text-white bg-black px-6 py-3 rounded-tr-md rounded-tl-md font-sans' : 'font-serif'} menu_item text-black text-2xl px-6 py-3 font-semibold `}>PROJECTS</p>
+                        </motion.a>
+                        <motion.a  
+                            variants={{hidden: {opacity: 0, x: -50}, visible: {opacity: 1, x: 0}}}
+                            initial='hidden'
+                            animate='visible'
+                            className={`${renderItem === 'contact' ? 'w-[50%] text-center cursor-pointer font-sans active delay-300' : 'cursor-pointer '}`} 
+                            onClick={() => handleMenuClick('contact')}
+                            transition={{duration: 0.5, delay: 0.3}}>
+                            <p className={`${renderItem === 'contact' ? 'text-white bg-black px-6 py-3 rounded-tr-md rounded-tl-md font-sans' : 'font-serif'} menu_item text-black text-2xl px-6 py-3 font-semibold `}>CONTACT</p>
+                        </motion.a>
+                        <a href='http://localhost:5173/src/assets/SandeepVarma_Resume.pdf' className='relative cursor-pointer' download={'sandeep_resume.pdf'} type='application/pdf'><p className='menu_item text-[blue] text-2xl px-6 py-3 font-semibold font-serif'>RESUME  <span class="absolute inline-flex top-1 rounded-full h-6 w-6 shadow-3xl animate-bounce text-[blue]"><MdOutlineDownloadForOffline /></span>
                         </p></a>
                     </div>
                 </div>
             </div>
-            <div className="bottom_wrpper bg-[#18171C] p-3 w-[100%] h-[100%] text-white light:text-black light:bg-white rounded-br-md rounded-bl-md flex flex-col justify-center items-center">
+            <div className="bottom_wrpper bg-black p-3 w-[100%] h-[100%] text-white light:text-black light:bg-white rounded-br-md rounded-bl-md flex flex-col justify-center items-center overflow-y-scroll">
                 {renderItem === 'home' && <Home />}
                 {renderItem === 'about' && <About />}
                 {renderItem === 'projects' && <Projects />}
