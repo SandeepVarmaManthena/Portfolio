@@ -74,7 +74,7 @@ const Layout = () => {
                             transition={{duration: 0.5, delay: 0.3}}>
                             <p className={`${renderItem === 'contact' ? 'text-white bg-black px-6 py-3 rounded-tr-md rounded-tl-md font-sans' : 'font-serif'} menu_item text-black text-2xl px-6 py-3 font-semibold `}>CONTACT</p>
                         </motion.a>
-                        <a href='http://localhost:5173/src/assets/SandeepVarma_Resume.pdf' className='relative cursor-pointer' download={'sandeep_resume.pdf'} type='application/pdf'><p className='menu_item text-[blue] text-2xl px-6 py-3 font-semibold font-serif'>RESUME  <span class="absolute inline-flex top-1 rounded-full h-6 w-6 shadow-3xl animate-bounce text-[blue]"><MdOutlineDownloadForOffline /></span>
+                        <a href='/SandeepVarma_Resume.pdf' className='relative cursor-pointer' download={'sandeep_resume.pdf'} type='application/pdf'><p className='menu_item text-[blue] text-2xl px-6 py-3 font-semibold font-serif'>RESUME  <span class="absolute inline-flex top-1 rounded-full h-6 w-6 shadow-3xl animate-bounce text-[blue]"><MdOutlineDownloadForOffline /></span>
                         </p></a>
                     </div>
                 </div>
