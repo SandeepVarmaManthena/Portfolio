@@ -9,6 +9,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import { motion } from 'framer-motion';
+import { SiFrontendmentor } from "react-icons/si";
 
 const Layout = () => {
 
@@ -22,10 +23,10 @@ const Layout = () => {
 
   return (
     <>
-        <div className="whole_wrapper px-2 py-1 bg-[#F8FAFC] w-[100%] flex flex-col justify-center items-center h-[100vh] overflow-hidden">
+        <div className="whole_wrapper px-2 py-1 bg-[#F8FAFC] w-[100%] flex flex-col justify-center items-center h-[100vh] overflow-auto">
             <div className="top_div w-[100%] sticky top-2 z-50 ">
                 <div className="top_sub_div_1 flex flex-row justify-between items-center bg-black px-6 py-4 rounded-md drop-shadow-lg">
-                    <p className='text-xl text-white light:text-black font-sans '><span className='text-[#0AFE92] font-semibold'>Hello,</span> Welcome To My Portfolio.</p>
+                    <p className='text-xl text-white light:text-black font-sans inline-block'><span className='text-[#0AFE92] font-semibold'>Hello,</span> Welcome To My Portfolio <SiFrontendmentor className='inline-block text-2xl text-white font-extrabold'/> </p>
                     <div className="socilal_links flex flex-row justify-between items-center w-[14%]">
                         <a href="https://www.linkedin.com/in/sandeepvarmamantena/">
                             <SlSocialLinkedin className='text-white text-2xl font-bold'/>
@@ -79,7 +80,7 @@ const Layout = () => {
                     </div>
                 </div>
             </div>
-            <div className="bottom_wrpper bg-black p-3 w-[100%] h-[100%] text-white light:text-black light:bg-white rounded-br-md rounded-bl-md flex flex-col justify-center items-center overflow-y-scroll">
+            <div className="bottom_wrpper bg-black p-3 w-[100%] h-[100%]  text-white light:text-black light:bg-white rounded-br-md rounded-bl-md flex flex-col overflow-y-scroll">
                 {renderItem === 'home' && <Home />}
                 {renderItem === 'about' && <About />}
                 {renderItem === 'projects' && <Projects />}
