@@ -104,17 +104,17 @@ const About = () => {
             <div className="tech_stack_wrapper flex flex-col justify-center items-center p-6">
                 <p className='text-4xl font-semibold font-serif tracking-wide'>TECH StacK</p>
                 <div className="top_stack flex flex-row justify-between items-center gap-6 w-[100%] py-6 x-4">
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaHtml5 /> <span className='text-sm font-serif tracking-wider'>HTML</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaCss3Alt /> <span className='text-sm font-serif tracking-wider'>CSS</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><TbBrandJavascript /> <span className='text-sm font-serif tracking-wider'>JS</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaBootstrap /> <span className='text-sm font-serif tracking-wider'>Bootstrap</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><RiTailwindCssFill /> <span className='text-sm font-serif tracking-wider'>Tailwind</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaReact className='animate-spin-slow'/> <span className='text-sm font-serif tracking-wider'>React</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiRedux /> <span className='text-sm font-serif tracking-wider'>Redux</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiAxios /> <span className='text-sm font-serif tracking-wider'>Axios</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiReduxsaga /> <span className='text-sm font-serif tracking-wider'>Saga</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><TbBrandFramerMotion /> <span className='text-sm font-serif tracking-wider'>Motion</span></p>
-                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center '><FaJoomla /> <span className='text-sm font-serif tracking-wider'>Joomla</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaHtml5 /> <span className='text-sm font-serif tracking-wider'>HTML</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaCss3Alt /> <span className='text-sm font-serif tracking-wider'>CSS</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><TbBrandJavascript /> <span className='text-sm font-serif tracking-wider'>JS</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaBootstrap /> <span className='text-sm font-serif tracking-wider'>Bootstrap</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><RiTailwindCssFill /> <span className='text-sm font-serif tracking-wider'>Tailwind</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaReact className='animate-spin-slow'/> <span className='text-sm font-serif tracking-wider'>React</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiRedux /> <span className='text-sm font-serif tracking-wider'>Redux</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiAxios /> <span className='text-sm font-serif tracking-wider'>Axios</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiReduxsaga /> <span className='text-sm font-serif tracking-wider'>Saga</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><TbBrandFramerMotion /> <span className='text-sm font-serif tracking-wider'>Motion</span></p>
+                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center '><FaJoomla /> <span className='text-sm font-serif tracking-wider'>Joomla</span></p>
                 </div>
                 {/* <div className="bottom_stack flex flex-row justify-around items-center gap-4 w-[90%] p-4 animate-scroll">
                     <p className='p-3 border-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg'><FaHtml5 /></p>
