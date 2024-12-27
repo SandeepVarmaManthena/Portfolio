@@ -57,29 +57,29 @@ const About = () => {
                     className='list-[disc] list-outside flex flex-col gap-4 pl-6'
                   >
                     <motion.li 
-                      className='text-xl font-normal font-serif tracking-wide text-[#0AFE92]'
+                      className='text-2xl font-light font-serif tracking-wide text-[#0AFE92]'
                       variants={childVariant}
                       initial='hidden'
                       animate='visible'
                       transition={{ duration: 0.4, delay: 0.3 }}
                     >
-                      <span className='font-medium text-lg font-sans text-white'>I am Sandeep Varma Mantena,</span> a Frontend Developer with 3 years of experience in building responsive websites and web applications. I specialize in React, JavaScript, and CSS. I am passionate about building scalable and maintainable web applications. I am a quick learner and always eager to learn new technologies.</motion.li>
+                      I am Sandeep Varma Mantena, Highly motivated and results-oriented final-year Bachelor of Technology in AI & DS with a strong foundation in computer science and a proven ability to build dynamic web applications using React, JavaScript, and modern front-end technologies.</motion.li>
                     <motion.li 
-                      className='text-xl font-normal font-serif tracking-wide'
+                      className='text-2xl font-light font-serif tracking-wide'
                       variants={childVariant}
                       initial='hidden'
                       animate='visible'
                       transition={{ duration: 0.5, delay: 0.4 }}
                     >
-                      I have a Bachelor's degree in Computer Science and Engineering from Vignan's Institute of Information Technology, Visakhapatnam, India. I have worked with various startups and companies to build web applications. I have experience in working with RESTful APIs, GraphQL, and Firebase.</motion.li>
+                      Demonstrated exceptional problem-solving and teamwork skills by leading the development of a blockchain solution that secured 1st place in an India-level hackathon, showcasing a strong ability to collaborate effectively and achieve outstanding results.</motion.li>
                     <motion.li 
-                      className='text-xl font-normal font-serif tracking-wide text-[#0AFE92]'
+                      className='text-2xl font-light font-serif tracking-wide text-[#0AFE92]'
                       variants={childVariant}
                       initial='hidden'
                       animate='visible'
                       transition={{ duration: 0.6, delay: 0.5 }}
                     >
-                      I am currently looking for new opportunities to work as a <span className='font-medium font-sans text-lg text-white'>Frontend Developer</span>. If you have any opportunities, please feel free to contact me.</motion.li>
+                      Eager to contribute to a challenging role as a Frontend Developer and contribute to innovative projects within a dynamic team environment, leveraging my technical skills and passion for technology to drive impactful solutions.</motion.li>
                   </ol>
              </div>
              <div className="img_content_div w-[30%] h-[100%] flex items-center flex-col flex justify-center gap-4 drop-shadow-2xl bg-[#0AFE92]  rounded-md py-6 px-3">
@@ -100,21 +100,21 @@ const About = () => {
                   </div>
              </div>
         </div>
-        <div className="tech_stack_div ">
-            <div className="tech_stack_wrapper flex flex-col justify-center items-center p-6">
+        <div className="tech_stack_div py-4">
+            <div className="tech_stack_wrapper flex flex-col justify-center items-center p-6 ">
                 <p className='text-4xl font-semibold font-serif tracking-wide'>TECH StacK</p>
                 <div className="top_stack flex flex-row justify-between items-center gap-6 w-[100%] py-6 x-4">
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaHtml5 /> <span className='text-sm font-serif tracking-wider'>HTML</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaCss3Alt /> <span className='text-sm font-serif tracking-wider'>CSS</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><TbBrandJavascript /> <span className='text-sm font-serif tracking-wider'>JS</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaBootstrap /> <span className='text-sm font-serif tracking-wider'>Bootstrap</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><RiTailwindCssFill /> <span className='text-sm font-serif tracking-wider'>Tailwind</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaReact className='animate-spin-slow'/> <span className='text-sm font-serif tracking-wider'>React</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiRedux /> <span className='text-sm font-serif tracking-wider'>Redux</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiAxios /> <span className='text-sm font-serif tracking-wider'>Axios</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiReduxsaga /> <span className='text-sm font-serif tracking-wider'>Saga</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><TbBrandFramerMotion /> <span className='text-sm font-serif tracking-wider'>Motion</span></p>
-                    <p className='px-4 py-2 border-b-3 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center '><FaJoomla /> <span className='text-sm font-serif tracking-wider'>Joomla</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaHtml5 /> <span className='text-sm font-serif tracking-wider'>HTML</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaCss3Alt /> <span className='text-sm font-serif tracking-wider'>CSS</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><TbBrandJavascript /> <span className='text-sm font-serif tracking-wider'>JS</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaBootstrap /> <span className='text-sm font-serif tracking-wider'>Bootstrap</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><RiTailwindCssFill /> <span className='text-sm font-serif tracking-wider'>Tailwind</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><FaReact className='animate-spin-slow'/> <span className='text-sm font-serif tracking-wider'>React</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiRedux /> <span className='text-sm font-serif tracking-wider'>Redux</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiAxios /> <span className='text-sm font-serif tracking-wider'>Axios</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><SiReduxsaga /> <span className='text-sm font-serif tracking-wider'>Saga</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center'><TbBrandFramerMotion /> <span className='text-sm font-serif tracking-wider'>Motion</span></p>
+                    <p className='px-4 py-2 border-b-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg flex flex-col items-center '><FaJoomla /> <span className='text-sm font-serif tracking-wider'>Joomla</span></p>
                 </div>
                 {/* <div className="bottom_stack flex flex-row justify-around items-center gap-4 w-[90%] p-4 animate-scroll">
                     <p className='p-3 border-2 text-4xl text-[#0AFE92] border-[#0AFE92] rounded-lg'><FaHtml5 /></p>
@@ -131,6 +131,7 @@ const About = () => {
                 </div> */}
             </div>
         </div>
+        
         
     </>
   )

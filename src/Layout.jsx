@@ -27,7 +27,7 @@ const Layout = () => {
             <div className="top_div w-[100%] sticky top-2 z-50 ">
                 <div className="top_sub_div_1 flex flex-row justify-between items-center bg-black px-6 py-4 rounded-md drop-shadow-lg">
                     <p className='text-xl text-white light:text-black font-sans inline-block'><span className='text-[#0AFE92] font-semibold'>Hello,</span> Welcome To My Portfolio <SiFrontendmentor className='inline-block text-2xl text-white font-extrabold'/> </p>
-                    <div className="socilal_links flex flex-row justify-between items-center w-[14%]">
+                    <div className="socilal_links flex sm:hidden flex-row justify-between items-center w-[14%] md:flex ">
                         <a href="https://www.linkedin.com/in/sandeepvarmamantena/">
                             <SlSocialLinkedin className='text-white text-2xl font-bold'/>
                         </a>
@@ -75,7 +75,7 @@ const Layout = () => {
                             transition={{duration: 0.5, delay: 0.3}}>
                             <p className={`${renderItem === 'contact' ? 'text-white bg-black px-6 py-3 rounded-tr-md rounded-tl-md font-sans' : 'font-serif'} menu_item text-black text-2xl px-6 py-3 font-semibold `}>CONTACT</p>
                         </motion.a>
-                        <a href='./SandeepVarma_Resume.pdf' className='relative cursor-pointer' download={'sandeep_resume.pdf'} type='application/pdf'><p className='menu_item text-[blue] text-2xl px-6 py-3 font-semibold font-serif'>RESUME  <span class="absolute inline-flex top-1 rounded-full h-6 w-6 shadow-3xl animate-bounce text-[blue]"><MdOutlineDownloadForOffline /></span>
+                        <a href='./SandeepVarma_Resume.pdf' className='relative cursor-pointer md:block sm:hidden' download={'sandeep_resume.pdf'} type='application/pdf'><p className='menu_item text-[blue] text-2xl px-6 py-3 font-semibold font-serif'>RESUME  <span class="absolute inline-flex top-1 rounded-full h-6 w-6 shadow-3xl animate-bounce text-[blue]"><MdOutlineDownloadForOffline /></span>
                         </p></a>
                     </div>
                 </div>
