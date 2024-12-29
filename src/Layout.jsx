@@ -80,7 +80,7 @@ const Layout = () => {
                     </div>
                 </div>
             </div>
-            <div className="bottom_wrpper bg-black p-3 w-[100%] h-[100%]  text-white light:text-black light:bg-white rounded-br-md rounded-bl-md flex flex-col overflow-y-scroll">
+            <div className="bottom_wrpper bg-black p-3 w-[100%] h-[100%]  text-white light:text-black light:bg-white rounded-br-md rounded-bl-md flex flex-col overflow-y-scroll overflow-x-hidden">
                 {renderItem === 'home' && <Home />}
                 {renderItem === 'about' && <About />}
                 {renderItem === 'projects' && <Projects />}
