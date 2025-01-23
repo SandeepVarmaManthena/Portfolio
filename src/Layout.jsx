@@ -31,11 +31,11 @@ const Layout = () => {
                         <a href="https://www.linkedin.com/in/sandeepvarmamantena/">
                             <SlSocialLinkedin className='text-white text-2xl font-bold'/>
                         </a>
-                        <a href="https://www.linkedin.com/in/sandeepvarmamantena/" className='text-white text-2xl font-bold'>
+                        <a href="https://github.com/SandeepVarmaManthena" className='text-white text-2xl font-bold'>
                             <VscGithubAlt className='text-white text-2xl font-bold'/>
-                        </a><a href="https://www.linkedin.com/in/sandeepvarmamantena/">
+                        </a><a href="https://x.com/SandeepVarmaaa">
                             <RiTwitterXLine className='text-white text-2xl font-bold'/>
-                        </a><a href="https://www.linkedin.com/in/sandeepvarmamantena/">
+                        </a><a href="https://www.instagram.com/____v__a__r__m__a____/">
                             <FaInstagram className='text-white text-2xl font-bold'/>
                         </a>
                     </div>
